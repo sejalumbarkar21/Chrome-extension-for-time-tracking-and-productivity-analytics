@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "FocusTrack – Time & Productivity",
+  "version": "1.0",
+  "description": "Tracks time spent on websites and shows productivity analytics.",
+  "permissions": ["tabs", "storage", "alarms", "idle", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
